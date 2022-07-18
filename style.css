@@ -1,0 +1,19 @@
+header{
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146,161,176,.3); 
+  }
+nav{
+    height: 4rem;
+}
+
+.navbar-brand{
+  font-weight: 800;
+  font-size: 23px;
+  color: rgb(32, 32, 32);
+}
+
+.navbar-nav{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
