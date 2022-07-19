@@ -22,7 +22,7 @@ header {
 /* navbar ends */
 
 #home {
-  height: 39.5rem;
+  height: 39.7rem;
   background: url(images/background\ image.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -36,8 +36,48 @@ header {
   font-size: 3rem;
   font-weight: 800;
 }
-
 body {
   padding: 0;
   margin: 0;
 }
+/* section title */
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #45505b;
+}
+/* section title ends */
+
+/* about section */
+#about {
+  height: 40rem;
+  background: white;
+}
+#aboutMe-img{
+  margin-top: 74px;
+  border-radius: 50px;
+}
+.about .content {
+  margin-top: 108px;
+}
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #728394;
+}
+.about .content ul {
+  padding: 0;
+}
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.about .content ul strong {
+  margin-right: 10px;
+}
+/* about section ends */
+ 
