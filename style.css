@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+body {
+  font-family: 'Roboto Mono', monospace;
+  padding: 0;
+  margin: 0;
+}
+
 /* navbar starts */
 header {
   background-color: #fff;
@@ -7,23 +25,21 @@ header {
   height: 4rem;
   box-shadow: 0 1px 4px rgba(146, 161, 176, .3);
 }
-
 .navbar-brand {
   font-weight: 800;
   font-size: 23px;
   color: rgb(32, 32, 32);
 }
-
 .navbar-nav {
   font-weight: 600;
   font-size: 1.2rem;
 }
-
 /* navbar ends */
 
+/* home section */
 #home {
-  height: 39.7rem;
-  background: url(images/background\ image.jpg) no-repeat center center;
+  min-height: 100vh;
+  background: url(images/background\ imge-medium.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,32 +52,34 @@ header {
   font-size: 3rem;
   font-weight: 800;
 }
-body {
-  padding: 0;
-  margin: 0;
+
+/* home section ends*/
+
+
+/* about section */
+#about-div {
+  min-height: 39.8rem;
+  background: white;
+  display: flex;
+  align-items: center;
 }
-/* section title */
-.section-title {
+.about-title {
   text-align: center;
 }
-.section-title h2 {
+.about-title h2 {
   font-size: 32px;
   font-weight: bold;
   color: #45505b;
 }
-/* section title ends */
-
-/* about section */
-#about {
-  height: 40rem;
-  background: white;
-}
-#aboutMe-img{
-  margin-top: 74px;
+#aboutMe-img {
+  max-width: 18rem;
+  height: clamp(200px, 300px, 334px);
+  /* margin-top: 3.8rem; */
   border-radius: 50px;
 }
 .about .content {
-  margin-top: 108px;
+  /* margin-top: 80px; */
+  font-family: 'Albert Sans', sans-serif;
 }
 .about .content h3 {
   font-weight: 700;
@@ -79,5 +97,85 @@ body {
 .about .content ul strong {
   margin-right: 10px;
 }
+/* FOR BELOW MEDIUM DEVICES */
+@media (max-width:991px){
+  .about .content {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  #aboutMe-img {
+    margin-top: 3.8rem;
+  }
+}
+
 /* about section ends */
- 
+
+/* skills sections */
+#skills {
+  min-height: 39.5rem;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+}
+.card {
+  margin: 30px;
+  width: 11rem;
+  height: 14rem;
+  border: 0px solid;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+#skills .content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-img-top {
+  height: 9rem;
+}
+.skills-title {
+  text-align: center;
+}
+.skills-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+/* FOR BELOW MEDIUM DEVICES */
+@media (max-width:991px) {
+  #skills .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .card {
+    margin: 20px;
+    width: 11rem;
+    height: 14rem;
+  }
+
+  .lastCard {
+    margin-bottom: 30px;
+  }
+  .card-img-top {
+    height: 9rem;
+  }
+  .card-title{
+    display: flex;  
+  flex-wrap: wrap;
+  }
+}
+
+/* FOR SMART PHONES */
+@media (max-width:426px) {
+  .card-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .card {
+    height: 13rem;
+  }
+}
+
+
+
