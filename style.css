@@ -85,8 +85,9 @@ header {
   border-radius: 50px;
 }
 .about .content {
+
   /* margin-top: 80px; */
-  font-family: 'Albert Sans', sans-serif;
+  font-family: 'Euclidcirculara webfont',Arial,sans-serif;
 }
 .about .content h3 {
   font-weight: 700;
@@ -171,10 +172,12 @@ header {
 }
 /* FOR SMART PHONES */
 @media (min-width:320px) and (max-width:460px) {
+  #skills {
+    min-height: auto;
+  }
   .card {
     margin: 10px;
     height: 7rem;
-    /* background:  linear-gradient(to bottom, #009fff, #000000); */
     background-color: white;
   }
   .card-body{
