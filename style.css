@@ -10,6 +10,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 body {
   /* font-family: 'Roboto Mono', monospace; */
   padding: 0;
@@ -25,20 +26,24 @@ header {
   height: 4rem;
   box-shadow: 0 1px 4px rgba(146, 161, 176, .3);
 }
+
 .navbar-brand {
   font-weight: 800;
   font-size: 23px;
   color: rgb(32, 32, 32);
 }
+
 .navbar-nav {
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
   font-size: 1.2rem;
 }
+
 /* navbar ends */
 
 /* home section */
 #home {
+  height: 25rem;
   min-height: 100vh;
   background: url(images/background\ imge-medium.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -47,16 +52,45 @@ header {
   background-size: cover;
 }
 
-.home-content {
+.home-content-desktop {
   padding-top: 163px;
   color: white;
   font-size: 3rem;
   font-weight: 800;
 }
+
+.home-content-mobile {
+  display: none;
+}
+
 /* FOR SMART PHONES */
-@media (max-width:426px) {
-  .home-text {
-    font-size: 27px;
+@media (max-width:470px) {
+  #home {
+    display: flex;
+    align-items: center;
+  }
+
+  .home-content-mobile {
+    display: inline-block;
+    padding: 0 0 0 15px;
+  }
+
+  .home-content-desktop {
+    display: none;
+  }
+  .hero {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191;
+  }
+  .hero-profession {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: white;
   }
 }
 
@@ -70,44 +104,54 @@ header {
   display: flex;
   align-items: center;
 }
+
 .about-title {
   text-align: center;
 }
+
 .about-title h2 {
   font-size: 32px;
   font-weight: bold;
   color: #45505b;
 }
+
 #aboutMe-img {
   max-width: 18rem;
   height: clamp(200px, 300px, 334px);
   border-radius: 50px;
 }
+
 .about .content {
-  font-family: 'Euclidcirculara webfont',Arial,sans-serif;
+  font-family: 'Euclidcirculara webfont', Arial, sans-serif;
 }
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #728394;
 }
+
 .about .content ul {
   padding: 0;
 }
+
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
+
 .about .content ul strong {
   margin-right: 10px;
 }
+
 /* FOR BELOW MEDIUM DEVICES */
-@media (max-width:991px){
+@media (max-width:991px) {
   .about .content {
     margin-top: 80px;
     margin-bottom: 30px;
   }
+
   #aboutMe-img {
     margin-top: 4.8rem;
   }
@@ -120,11 +164,13 @@ header {
   min-height: 39.5rem;
   font-family: 'Roboto Mono', monospace;
   /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
-  background: linear-gradient(to bottom, #004e92 , gray);
+  background: linear-gradient(to bottom, #004e92, gray);
 }
+
 #skills .row {
   margin: 10px auto;
 }
+
 .card {
   margin: 30px;
   width: 11rem;
@@ -133,18 +179,22 @@ header {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.31), 0 8px 16px rgba(0, 0, 0, 0.24);
 }
+
 #skills .content {
   margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
 }
+
 .card-img-top {
   border-radius: 6px;
   height: 9rem;
 }
+
 .skills-title {
   text-align: center;
 }
+
 .skills-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -159,6 +209,7 @@ header {
     align-items: center;
     margin-top: 10px;
   }
+
   .card {
     margin: 20px;
     width: 11rem;
@@ -168,38 +219,43 @@ header {
   .lastCard {
     margin-bottom: 30px;
   }
+
   .card-img-top {
     height: 9rem;
   }
 }
+
 /* FOR SMART PHONES */
-@media (min-width:320px) and (max-width:460px) {
+@media (min-width:320px) and (max-width:488px) {
   #skills {
     min-height: auto;
   }
+
   #skills .row {
     margin: 45px auto;
   }
+
   .card {
     margin: 10px;
     height: 7rem;
     background-color: white;
   }
-  .card-body{
+
+  .card-body {
     padding: 10px;
   }
+
   .card-title {
     font-size: 4vw;
     font-weight: bold;
   }
+
   .skill-card-brandname {
     display: none;
   }
+
   .card-img-top {
     height: 4rem;
     width: 4rem;
   }
 }
-
-
-
