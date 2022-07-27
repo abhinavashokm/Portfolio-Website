@@ -43,54 +43,37 @@ header {
 
 /* home section */
 #home {
-  height: 25rem;
+  height: 30rem;
   min-height: 100vh;
+  padding: 38.5vh 0 0 8vw;
   background: url(images/background\ imge-medium.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-.home-content-desktop {
-  padding-top: 163px;
+.hero {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191;
+}
+.hero-profession {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: rgb(140, 140, 140);
+}
+.contactMe-btn {
+  pointer-events: none;
+  background-color: purple;
   color: white;
-  font-size: 3rem;
-  font-weight: 800;
 }
 
-.home-content-mobile {
-  display: none;
-}
-
-/* FOR SMART PHONES */
-@media (max-width:470px) {
-  #home {
-    display: flex;
-    align-items: center;
-  }
-
-  .home-content-mobile {
-    display: inline-block;
-    padding: 0 0 0 15px;
-  }
-
-  .home-content-desktop {
-    display: none;
-  }
+@media (max-width:400px) {
   .hero {
-    font-size: 35px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191;
-  }
-  .hero-profession {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 700;
-    color: white;
+    font-size: 29px;
   }
 }
 
