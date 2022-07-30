@@ -45,10 +45,9 @@ header {
   height: 30rem;
   min-height: 100vh;
   padding: 38.5vh 0 0 8vw;
-  background: url(images/background\ imge-low.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(images/background\ image-low.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
   background-size: cover;
 }
 
