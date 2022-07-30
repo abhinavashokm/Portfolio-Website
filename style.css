@@ -5,7 +5,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 
@@ -46,12 +45,13 @@ header {
   height: 30rem;
   min-height: 100vh;
   padding: 38.5vh 0 0 8vw;
-  background: url(images/background\ imge-medium.jpg) no-repeat center center;
+  background: url(images/background\ imge-low.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 .hero {
   font-size: 35px;
   font-weight: 700;
@@ -59,14 +59,16 @@ header {
   color: rgb(0, 0, 0);
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191;
 }
+
 .hero-profession {
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
   color: rgb(140, 140, 140);
 }
+
 .contactMe-btn {
-  pointer-events: none;
+
   background-color: purple;
   color: white;
 }
@@ -111,7 +113,7 @@ header {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #b888d0;
 }
 
 .about .content ul {
@@ -154,9 +156,9 @@ header {
   margin: 10px auto;
 }
 
-.card {
+#skills .card {
   margin: 30px;
-  width: 11rem;
+  width: 10rem;
   height: 14rem;
   border: 0px solid;
   border-radius: 8px;
@@ -169,7 +171,7 @@ header {
   justify-content: space-evenly;
 }
 
-.card-img-top {
+#skills .card-img-top {
   border-radius: 6px;
   height: 9rem;
 }
@@ -193,7 +195,7 @@ header {
     margin-top: 10px;
   }
 
-  .card {
+ #skills .card {
     margin: 20px;
     width: 11rem;
     height: 14rem;
@@ -203,7 +205,7 @@ header {
     margin-bottom: 30px;
   }
 
-  .card-img-top {
+  #skills .card-img-top {
     height: 9rem;
   }
 }
@@ -218,17 +220,17 @@ header {
     margin: 45px auto;
   }
 
-  .card {
+  #skills .card {
     margin: 10px;
     height: 7rem;
     background-color: white;
   }
 
-  .card-body {
+  #skills .card-body {
     padding: 10px;
   }
 
-  .card-title {
+  #skills .card-title {
     font-size: 4vw;
     font-weight: bold;
   }
@@ -237,8 +239,31 @@ header {
     display: none;
   }
 
-  .card-img-top {
+  #skills .card-img-top {
     height: 4rem;
     width: 4rem;
   }
+}
+
+
+/* CONTACT SECTION STARTS */
+#contact {
+  min-height: 39.5rem;
+}
+#contact .row {
+  justify-content: center;
+}
+.submit-btn {
+  margin: 1em 10px 10px 0;
+  width: 8rem;
+  float: right;
+}
+
+.form-border {
+  padding: 50px;
+  margin-bottom: 80px;
+  border: 0 solid;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.31), 0 8px 16px rgba(0, 0, 0, 0.24);
+  width: 100%;
 }
