@@ -29,7 +29,7 @@ header {
 .navbar-brand {
   font-weight: 800;
   font-size: 23px;
-  color: rgb(32, 32, 32);
+  color: #362b48;
 }
 
 .navbar-nav {
@@ -55,7 +55,7 @@ header {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: rgb(0, 0, 0);
+  color: #362b48;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191;
 }
 
@@ -63,12 +63,12 @@ header {
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
-  color: rgb(140, 140, 140);
+  color: #9b89b3;
 }
 
 .contactMe-btn {
 
-  background-color: purple;
+  background-color: #5927e5;
   color: white;
 }
 
@@ -82,9 +82,11 @@ header {
 
 
 /* about section */
+#about {
+  background: #f8f9fa;
+}
 #about-div {
   min-height: 39.8rem;
-  background: white;
   display: flex;
   align-items: center;
 }
@@ -112,7 +114,7 @@ header {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #b888d0;
+  color: #004e92;
 }
 
 .about .content ul {
@@ -248,6 +250,7 @@ header {
 /* CONTACT SECTION STARTS */
 #contact {
   min-height: 39.5rem;
+  background: #f8f9fa;
 }
 #contact .row {
   justify-content: center;
@@ -259,10 +262,18 @@ header {
 }
 
 .form-border {
-  padding: 50px;
+  /* padding: 50px; */
   margin-bottom: 80px;
   border: 0 solid;
   border-radius: 18px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.31), 0 8px 16px rgba(0, 0, 0, 0.24);
   width: 100%;
+}
+#contact .submit-btn {
+  background: #5927e5;
+  color: white;
+}
+
+
+footer {
+  background: #362b48;
 }
