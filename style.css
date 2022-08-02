@@ -45,9 +45,9 @@ header {
   height: 30rem;
   min-height: 100vh;
   padding: 38.5vh 0 0 8vw;
-  background: url(images/background\ image-low.jpg);
+  background: url(images/cool-background.png);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-size: cover;
 }
 
@@ -55,7 +55,7 @@ header {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #362b48;
+  color: #ffffff;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191;
 }
 
@@ -63,18 +63,23 @@ header {
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
-  color: #9b89b3;
+  color: aqua;
+  text-shadow: 1px 1px 1px #353131, 1px 2px 1px #919191, 1px 3px 1px #919191;
+}
+
+.hero-paragraph {
+  font-family: 'Euclidcirculara webfont', Arial, sans-serif;
+  color: #0000007d;
 }
 
 .contactMe-btn {
-
-  background-color: #5927e5;
+  background-color: #004e92;
   color: white;
 }
 
 @media (max-width:400px) {
   .hero {
-    font-size: 29px;
+    font-size: 32px;
   }
 }
 
@@ -85,6 +90,7 @@ header {
 #about {
   background: #f8f9fa;
 }
+
 #about-div {
   min-height: 39.8rem;
   display: flex;
@@ -143,6 +149,12 @@ header {
   }
 }
 
+@media (max-width:480px){
+  .about .content {
+    margin-top: 45px;
+  }
+}
+
 /* about section ends */
 
 /* skills sections */
@@ -196,7 +208,7 @@ header {
     margin-top: 10px;
   }
 
- #skills .card {
+  #skills .card {
     margin: 20px;
     width: 11rem;
     height: 14rem;
@@ -252,9 +264,11 @@ header {
   min-height: 39.5rem;
   background: #f8f9fa;
 }
+
 #contact .row {
   justify-content: center;
 }
+
 .submit-btn {
   margin: 1em 10px 10px 0;
   width: 8rem;
@@ -268,12 +282,13 @@ header {
   border-radius: 18px;
   width: 100%;
 }
+
 #contact .submit-btn {
-  background: #5927e5;
+  background: #004e92;
   color: white;
 }
 
-
+/* FOOTER */
 footer {
   background: #362b48;
 }
