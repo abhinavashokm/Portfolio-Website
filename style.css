@@ -38,6 +38,12 @@ header {
   font-size: 1.2rem;
 }
 
+@media (max-width:991px){
+  .navbar-nav {
+    font-family: unset;
+  }
+}
+
 /* navbar ends */
 
 /* home section */
@@ -45,7 +51,7 @@ header {
   height: 30rem;
   min-height: 100vh;
   padding: 38.5vh 0 0 8vw;
-  background: url(images/cool-background.png);
+  background: url(images/home-background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -56,7 +62,7 @@ header {
   font-weight: 700;
   margin-bottom: 10px;
   color: #ffffff;
-  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .hero-profession {
@@ -64,7 +70,7 @@ header {
   line-height: 36px;
   font-weight: 700;
   color: aqua;
-  text-shadow: 1px 1px 1px #353131, 1px 2px 1px #919191, 1px 3px 1px #919191;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .hero-paragraph {
@@ -73,11 +79,26 @@ header {
 }
 
 .contactMe-btn {
-  background-color: #004e92;
+  background-color: royalblue;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 45px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease 0s;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
+.contactMe-btn:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 12px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
 @media (max-width:400px) {
+  #home {
+    padding-top: 33vh;
+  }
   .hero {
     font-size: 32px;
   }
@@ -261,7 +282,7 @@ header {
 
 /* CONTACT SECTION STARTS */
 #contact {
-  min-height: 39.5rem;
+  min-height: 39.7rem;
   background: #f8f9fa;
 }
 
@@ -273,19 +294,14 @@ header {
   margin: 1em 10px 10px 0;
   width: 8rem;
   float: right;
+  border-radius: 7px;
 }
 
 .form-border {
-  /* padding: 50px; */
   margin-bottom: 80px;
   border: 0 solid;
   border-radius: 18px;
   width: 100%;
-}
-
-#contact .submit-btn {
-  background: #004e92;
-  color: white;
 }
 
 /* FOOTER */
