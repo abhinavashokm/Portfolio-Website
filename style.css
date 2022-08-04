@@ -43,7 +43,6 @@ header {
     font-family: unset;
   }
 }
-
 /* navbar ends */
 
 /* home section */
@@ -51,7 +50,7 @@ header {
   height: 30rem;
   min-height: 100vh;
   padding: 38.5vh 0 0 8vw;
-  background: url(images/home-background.png);
+  background: url(images/cool-background.png.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -87,12 +86,25 @@ header {
   font-family: 'Roboto', sans-serif;
   color: white;
 }
-
 .contactMe-btn:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 12px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
-  transform: translateY(-7px);
+}
+@media  (min-width:900px){
+  /* for devices that can hover */
+  .contactMe-btn:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 12px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+}
+@media  (max-width:899px){
+  /* for devices that can't hover */
+  .contactMe-btn:active {
+    background-color: #2EE59D;
+    color: #fff;
+    transform: translateY(-7px);
+  }
 }
 
 @media (max-width:400px) {
@@ -304,6 +316,13 @@ header {
   width: 100%;
 }
 
+@media (max-width:899px) {
+  .submit-btn:hover {
+    background-color:#007bff ;
+    border-color: #007bff;
+    text-decoration: none;
+  }
+}
 /* FOOTER */
 footer {
   background: #362b48;
